@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GunSmiths - FS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Password Dialog -->
+  <div id="passwordDialog" class="password-dialog">
+    <div class="password-container">
+      <h2>Please Log In using the provided Password from the manager!</h2>
+      <input type="password" id="passwordInput" placeholder="Enter Password" />
+      <button onclick="checkPassword()">Log In</button>
+    </div>
+  </div>
+
+  <div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="load1.jpg" alt="Image 1" />
+        </div>
+        <div class="flip-card-back">
+          <p>First image</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="load1.jpg" alt="Image 2" />
+        </div>
+        <div class="flip-card-back">
+          <p>Second image</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
