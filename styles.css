@@ -1,8 +1,8 @@
-/* Basic layout */
 body {
   margin: 0;
   background-color: #f0f0f0;
   padding: 20px; /* Optional: Adds space from edges */
+  background-color: #58615f;
 }
 
 .flip-wrapper {
@@ -38,7 +38,7 @@ body {
 }
 
 .flip-card-front {
-  background: #fff;
+  background: #574b4b;
 }
 
 .flip-card-back {

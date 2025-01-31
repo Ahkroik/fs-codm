@@ -2,7 +2,7 @@ function flipImage(container) {
   container.classList.toggle('flipped');
 }
 // The correct password
-const correctPassword = "FORTELESPECIALE";
+const correctPassword = "fortelespeciale";
 
 // Function to check if the entered password is correct
 function checkPassword() {

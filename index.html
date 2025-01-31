@@ -5,42 +5,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GunSmiths - FS</title>
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
   
+  <style>
+  .red-text{
+  color: #cc0000;
+  }
+  
+  .blue-text{
+  color: #0066ff;
+  }
+  
+  .lime-text-1{
+  color: #00ff00;
+  }
+  
+  .lime-text-2{
+  color: #00cc00;
+  font-size: 23px;
+  font-weight: bold;
+  }
+  
+  .aqua-text{
+  color: #25d2f5;
+  }
+  
+  .dirtywhite-text{
+  color: #d9d9d9;
+  font-size: 20px;
+  }
+  </style>
+  
+</head>
+<body bgcolor="#58615f">
+
   <!-- Password Dialog -->
   <div id="passwordDialog" class="password-dialog">
     <div class="password-container">
-      <h2>Please Log In using the provided Password from the manager!</h2>
+      <h2>Please log in using the password provided by the Web Manager!</h2>
       <input type="password" id="passwordInput" placeholder="Enter Password" />
       <button onclick="checkPassword()">Log In</button>
     </div>
   </div>
 
+	<div class="blue-text">
+  <h1><center>FS - GunSmiths</center></h1>
+</div>
+	<center><div class="red-text"><strong>Attention:</strong> Please note that these loadouts are created and used by: <strong><font color="#0066ff">ƑƧঞPr0Like</font></strong> AKA <font color="#0066ff"><strong>ƑƧ・Pr0Like</font></strong>
+	</center>
+	<div class="lime-text-2">
+		Sniper Rifles Loadouts
+	</div>
+	<h1><center>
   <div class="flip-wrapper">
     <div class="flip-container" onclick="flipImage(this)">
       <div class="flip-card">
         <div class="flip-card-front">
-          <img src="load1.jpg" alt="Image 1" />
+          <div class="aqua-text">DL Q33</div>
         </div>
         <div class="flip-card-back">
-          <p>First image</p>
+		<div class="dirtywhite-text">
+		<li>Muzzle: Monolithic Suppressor</li>
+          <li>Barrel: MIP Light</li>
+          <li>Stock: YKM Combat Stock</li>
+          <li>Perk: Fast Switch</li>
+          <li>Laser: OWC Laser - Tactical</li>
+		</div>
         </div>
       </div>
     </div>
-
+	 <div class="flip-wrapper">
     <div class="flip-container" onclick="flipImage(this)">
       <div class="flip-card">
         <div class="flip-card-front">
-          <img src="load1.jpg" alt="Image 2" />
+          <div class="aqua-text">LW3-Tundra</div>
         </div>
         <div class="flip-card-back">
-          <p>Second image</p>
+		<div class="dirtywhite-text">
+		<li>Muzzle: Tactical Suppressor</li>
+          <li>Barrel: 28.2'' Tiger Team</li>
+          <li>Perk: FMJ</li>
+          <li>Ammunition: 7 Rnd</li>
+          <li>Rear Grip: Serpent Wrap</li>
+		</div>
         </div>
       </div>
     </div>
-  </div>
-
+	
+	</h1></center>
+	<div class="lime-text-2">
+		Assault Rifles Loadouts
+	</div>
+	<h1><center>
+  <div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="aqua-text">DR-H</div>
+        </div>
+        <div class="flip-card-back">
+		<div class="dirtywhite-text">
+		<ul>
+          <li>Muzzle: Tactical Suppressor</li>
+          <li>Barrel: OWC Ranger</li>
+          <li>Stock: MIP Strike Stock</li>
+          <li>Ammunition: 25 Round OTM Mag</li>
+          <li>Rear Grip: Granulated Grip Tape</li>
+        </ul>
+		</div>
+        </div>
+      </div>
+    </div>
+	
+	 <div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="aqua-text">CR-56 AMAX</div>
+        </div>
+        <div class="flip-card-back">
+		<div class="dirtywhite-text">
+		<ul>
+          <li>Muzzle: Monolitic Suppressor</li>
+          <li>Barrel: MIP Custom Light</li>
+          <li>Stock: No Stock</li>
+          <li>Ammunition: Extended Mag A</li>
+          <li>Rear Grip: Granulated Grip Tape</li>
+        </ul>
+		</div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="aqua-text">Type 19</div>
+        </div>
+        <div class="flip-card-back">
+		<div class="dirtywhite-text">
+		<ul>
+          <li>Muzzle: North-Insdustry Heavyweight Suppressor</li>
+          <li>Barrel: Accurate/Supportive Long Barrel</li>
+          <li>Stock: Agile Stock</li>
+          <li>Ammunition: Fast Reload Mag</li>
+          <li>Rear Grip: Polymer Grip</li>
+        </ul>
+		</div>
+        </div>
+      </div>
+    </div>
+	<div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="aqua-text">BP50</div>
+        </div>
+        <div class="flip-card-back">
+		<div class="dirtywhite-text">
+		<ul>
+          <li>Muzzle: Maxim Silencer</li>
+          <li>Barrel: LEROY 438mm Rapid</li>
+          <li>Stock: Leroy Custom</li>
+          <li>Ammunition: .30 Russian Short 60 Round Drums</li>
+          <li>Rear Grip: Stippled Grip</li>
+        </ul>
+		</div>
+        </div>
+      </div>
+    </div>
+	
+	</h1></center>
+	<div class="lime-text-2">
+		SMG Loadouts
+	</div>
+	<h1><center>
+	 <div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="aqua-text">USS-9</div>
+        </div>
+        <div class="flip-card-back">
+		<div class="dirtywhite-text">
+		<li>Muzzle: Monolithic Suppressor</li>
+          <li>Barrel: FSS Carbine Pro</li>
+          <li>Stock: Standard-Issue Wood Stock</li>
+          <li>Ammunition: .41 AE 32-Round Mags</li>
+          <li>Rear Grip: Granulated Grip Tape</li>
+		</div>
+        </div>
+      </div>
+    </div>
+		 <div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="aqua-text">QXR</div>
+        </div>
+        <div class="flip-card-back">
+		<div class="dirtywhite-text">
+		<li>Muzzle: Monolithic Suppressor</li>
+          <li>Barrel: OWC Marksman</li>
+          <li>Stock: No Stock</li>
+          <li>Perk: Enhanced Bolt</li>
+          <li>Rear Grip: Granulated Grip Tape</li>
+		</div>
+        </div>
+      </div>
+    </div>
+		 <div class="flip-wrapper">
+    <div class="flip-container" onclick="flipImage(this)">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <div class="aqua-text">QQ9</div>
+        </div>
+        <div class="flip-card-back">
+		<div class="dirtywhite-text">
+		<li>Muzzle: Monolithic Suppressor</li>
+          <li>Barrel: RTC Recon Tac Long</li>
+          <li>Perk: Sleight of Hand</li>
+          <li>Ammunition: 45 Round Extended Mag</li>
+          <li>Rear Grip: Granulated Grip Tape</li>
+		</div>
+        </div>
+      </div>
+    </div>
+	
   <script src="script.js"></script>
 </body>
 </html>
