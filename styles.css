@@ -1,36 +1,81 @@
+/* Basic reset and body styling */
 body {
   margin: 0;
-  background-color: #f0f0f0;
-  padding: 20px; /* Optional: Adds space from edges */
   background-color: #58615f;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
 }
 
+/* Password Dialog */
+.password-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.password-container {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px; /* Limit the max width */
+}
+
+.password-container input,
+.password-container button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.password-container button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.password-container button:hover {
+  background-color: #45a049;
+}
+
+/* Flip Card */
 .flip-wrapper {
   display: flex;
-  justify-content: center; /* Centers the images horizontally */
-  gap: 20px; /* Space between images */
-  margin-bottom: 20px; /* Space between rows */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .flip-container {
-  perspective: 1000px; /* Creates the 3D space */
+  perspective: 1000px;
 }
 
 .flip-card {
-  width: 300px;
+  width: 250px;
   height: 200px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
 
-/* Flip when clicked */
 .flip-container.flipped .flip-card {
   transform: rotateY(180deg);
 }
 
-/* Front side of the card */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -51,54 +96,93 @@ body {
   transform: rotateY(180deg);
 }
 
-.flip-card-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+/* Text styles */
+.aqua-text, .red-text, .blue-text, .lime-text-2, .dirtywhite-text {
+  font-size: 18px;
 }
 
-
-/* Password Dialog Styles */
-.password-dialog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  font-family: Arial, sans-serif;
-  z-index: 9999;
+.lime-text-2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.password-container {
-  background-color: #333;
-  padding: 30px;
+/* Make sure we don't have overly large text on small screens */
+h1 {
+  font-size: 1.5rem;
+}
+
+.centered-text {
   text-align: center;
-  border-radius: 8px;
 }
 
-.password-container input {
-  padding: 10px;
-  margin-top: 20px;
-  width: 80%;
-  border: none;
-  border-radius: 5px;
+/* Media Queries for responsiveness */
+
+/* Small screens (phones in portrait mode) */
+@media screen and (max-width: 600px) {
+  .flip-card {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Adjust height automatically */
+  }
+  
+  .password-container {
+    padding: 15px;
+  }
+
+  .password-container input, 
+  .password-container button {
+    width: 100%; /* Full width for form elements */
+  }
+
+  .lime-text-2 {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+
+  .flip-wrapper {
+    gap: 10px; /* Smaller gap between items on mobile */
+  }
 }
 
-.password-container button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
+/* Medium to large screens (tablets and up) */
+@media screen and (min-width: 600px) {
+  .flip-card {
+    width: 280px; /* Larger card size */
+    height: 220px;
+  }
+
+  .lime-text-2 {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .flip-wrapper {
+    gap: 20px;
+  }
 }
 
-.password-container button:hover {
-  background-color: #45a049;
+/* Desktop screens */
+@media screen and (min-width: 1024px) {
+  .flip-card {
+    width: 300px; /* Larger card size for desktops */
+    height: 250px;
+  }
+
+  .lime-text-2 {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .flip-wrapper {
+    gap: 30px; /* Increase gap for large screens */
+  }
 }
