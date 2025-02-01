@@ -38,12 +38,14 @@
 </head>
 <body bgcolor="#58615f">
 
-  <!-- Password Dialog -->
   <div id="passwordDialog" class="password-dialog">
     <div class="password-container">
       <h2>Please log in using the password provided by the Web Manager!</h2>
-      <input type="password" id="passwordInput" placeholder="Enter Password" />
-      <button onclick="checkPassword()">Log In</button>
+      <form onsubmit="checkPassword(); return false;">
+		<input type="password" id="passwordInput" placeholder="Enter Password" />
+		<button type="submit">Log In</button>
+	</form>
+
     </div>
   </div>
 
