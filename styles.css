@@ -27,7 +27,7 @@ body {
   text-align: center;
   border-radius: 8px;
   width: 90%;
-  max-width: 400px; /* Limit the max width */
+  max-width: 400px;
 }
 
 .password-container input,
@@ -52,10 +52,11 @@ body {
 /* Flip Card */
 .flip-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+  margin-top: 10px;  /* Reduced space for better alignment */
 }
 
 .flip-container {
@@ -68,6 +69,7 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
+  margin-bottom: 15px; /* Space between cards */
 }
 
 .flip-container.flipped .flip-card {
@@ -99,17 +101,13 @@ body {
 /* Text styles */
 .aqua-text, .red-text, .blue-text, .lime-text-2, .dirtywhite-text {
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .lime-text-2 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 20px;
-}
-
-/* Make sure we don't have overly large text on small screens */
-h1 {
-  font-size: 1.5rem;
 }
 
 .centered-text {
@@ -122,35 +120,35 @@ h1 {
 @media screen and (max-width: 600px) {
   .flip-card {
     width: 100%; /* Full width on small screens */
-    height: auto; /* Adjust height automatically */
+    height: auto;
   }
-  
+
   .password-container {
     padding: 15px;
   }
 
   .password-container input, 
   .password-container button {
-    width: 100%; /* Full width for form elements */
+    width: 100%;
   }
 
   .lime-text-2 {
-    font-size: 20px; /* Adjust font size for mobile */
+    font-size: 20px;
   }
 
   h1 {
-    font-size: 1.2rem; /* Adjust font size for mobile */
+    font-size: 1.2rem;
   }
 
   .flip-wrapper {
-    gap: 10px; /* Smaller gap between items on mobile */
+    gap: 10px;
   }
 }
 
 /* Medium to large screens (tablets and up) */
 @media screen and (min-width: 600px) {
   .flip-card {
-    width: 280px; /* Larger card size */
+    width: 280px;
     height: 220px;
   }
 
@@ -170,7 +168,7 @@ h1 {
 /* Desktop screens */
 @media screen and (min-width: 1024px) {
   .flip-card {
-    width: 300px; /* Larger card size for desktops */
+    width: 300px;
     height: 250px;
   }
 
@@ -183,6 +181,6 @@ h1 {
   }
 
   .flip-wrapper {
-    gap: 30px; /* Increase gap for large screens */
+    gap: 30px;
   }
 }
